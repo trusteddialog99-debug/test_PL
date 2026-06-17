@@ -1,16 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
-  <!-- Beispielvorlage mit zwei Platzhaltern -->
-  <style>
-    .ph { fill: none; stroke: #888888; stroke-dasharray: 6 4; }
-  </style>
-
-  <!-- Avatar-Platzhalter (1:1) -->
-  <rect id="placeholder-avatar" x="40" y="40" width="200" height="200" class="ph" />
-
-  <!-- Rechteck-Logo-Platzhalter (5.5:1) -->
-  <rect id="placeholder-rect-logo" x="280" y="60" width="550" height="100" class="ph" />
-
-  <!-- Beispielhintergrund / Text um die Vorschau zu sehen -->
-  <rect x="0" y="0" width="900" height="600" fill="transparent" />
-</svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_1" xmlns="http://www.w3.org/2000/svg" width="1200" height="800" version="1.1" xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 800">
+  <!-- Generator: Adobe Illustrator 29.8.0, SVG Export Plug-In . SVG Version: 2.1.1 Build 160)  -->
+  <defs>
+    <clipPath id="clippath">
+      <polygon points="195.3 225.2 428.6 225.2 428.6 394.8 195.3 394.8 195.3 225.2 195.3 225.2" clip-rule="evenodd" fill="none"/>
+    </clipPath>
+  </defs>
+  <rect width="1200" height="800" fill="#eef2f7"/>
+  <rect x="80" y="60" width="1040" height="680" rx="24" ry="24" fill="#fff" stroke="#d1d5db" stroke-width="2"/>
+  <rect x="80" y="60" width="1040" height="120" rx="24" ry="24" fill="#e5eefc"/>
+  <rect x="80" y="156" width="1040" height="4" fill="#2563eb"/>
+  <text transform="translate(120 120)" fill="#1f2937" font-family="ArialMT, Arial" font-size="12" isolation="isolate"><tspan x="0" y="0">Beispielvorlage mit SVG-Platzhaltern</tspan></text>
+  <text transform="translate(120 148)" fill="#6b7280" font-family="ArialMT, Arial" font-size="14" isolation="isolate"><tspan x="0" y="0">Die Platzhalter unten sind technisch über eindeutige IDs ansprechbar.</tspan></text>
+  <g id="slot-rect-logo">
+    <rect id="placeholder-rect-logo" x="330" y="270" width="440" height="80" rx="12" ry="12" fill="#f3f4f6" stroke="#9ca3af" stroke-dasharray="8 6" stroke-width="2"/>
+    <text transform="translate(499 302)" fill="#4b5563" font-family="ArialMT, Arial" font-size="12" isolation="isolate"><tspan x="0" y="0">Rechteckiges Logo</tspan></text>
+    <text transform="translate(473.4 324)" fill="#6b7280" font-family="ArialMT, Arial" font-size="14" isolation="isolate"><tspan x="0" y="0">ID: placeholder-rect-logo</tspan></text>
+    <text transform="translate(483.3 344)" fill="#9ca3af" font-family="ArialMT, Arial" font-size="12" isolation="isolate"><tspan x="0" y="0">Format: 5,5:1 / skalierbar</tspan></text>
+  </g>
+  <rect x="120" y="450" width="300" height="210" rx="18" ry="18" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1.5"/>
+  <text transform="translate(145 490)" fill="#4b5563" font-family="ArialMT, Arial" font-size="12" isolation="isolate"><tspan x="0" y="0">Statischer Bereich A</tspan></text>
+  <text transform="translate(145 520)" fill="#6b7280" font-family="ArialMT, Arial" font-size="14" isolation="isolate"><tspan x="0" y="0">Hier bleibt die Grafik unverändert.</tspan></text>
+  <line x1="145" y1="555" x2="385" y2="555" fill="none" stroke="#d1d5db" stroke-width="2"/>
+  <line x1="145" y1="585" x2="350" y2="585" fill="none" stroke="#e5e7eb" stroke-width="2"/>
+  <line x1="145" y1="615" x2="370" y2="615" fill="none" stroke="#e5e7eb" stroke-width="2"/>
+  <rect x="460" y="450" width="620" height="210" rx="18" ry="18" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1.5"/>
+  <text transform="translate(485 490)" fill="#4b5563" font-family="ArialMT, Arial" font-size="12" isolation="isolate"><tspan x="0" y="0">Statischer Bereich B</tspan></text>
+  <text transform="translate(485 520)" fill="#6b7280" font-family="ArialMT, Arial" font-size="14" isolation="isolate"><tspan x="0" y="0">Diesen Teil kann deine App als feste Vorlage verwenden.</tspan></text>
+  <rect x="485" y="550" width="180" height="32" rx="8" ry="8" fill="#dbeafe"/>
+  <rect x="685" y="550" width="140" height="32" rx="8" ry="8" fill="#e5e7eb"/>
+  <path d="M494,600h542c5,0,9,4,9,9h0c0,5-4,9-9,9H494c-5,0-9-4-9-9h0c0-5,4-9,9-9Z" fill="#e5e7eb"/>
+  <path d="M494,628h402c5,0,9,4,9,9h0c0,5-4,9-9,9h-402c-5,0-9-4-9-9h0c0-5,4-9,9-9Z" fill="#f3f4f6"/>
+  <text transform="translate(120 705)" fill="#9ca3af" font-family="ArialMT, Arial" font-size="12" isolation="isolate"><tspan x="0" y="0">Hinweis: Deine App kann per XML/SVG-Parsing die IDs &quot;placeholder-avatar&quot; und &quot;placeholder-rect-logo&quot; finden,</tspan></text>
+  <text transform="translate(120 725)" fill="#9ca3af" font-family="ArialMT, Arial" font-size="12" isolation="isolate"><tspan x="0" y="0">die x-/y-Positionen sowie width/height auslesen und die hochgeladenen SVGs proportional in diese Bereiche einsetzen.</tspan></text>
+  <image width="653" height="327" transform="translate(911.1 182.4) scale(.8)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAo4AAAFICAYAAADeV3/UAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAgAElEQVR4nOzdeVwTd/4/8FcmQLhCRE4RIwiIgBKkiNYq9QJbFfA+sCri1Yfaa7s9v9S6/uy21rpt19ZWba3b+7JaRW2pVhevFVsggiIIokEUIocQrpDr9webz2ZIgIBQbft+Ph59VJKZT2Y+M/OZ93yuEQQGBhpACCGEEEJIB4qKigTc3d4IQgghhBDy+0CBIyGEEEIIsQoFjoQQQgghxCoUOBJCCCGEEKtQ4EgIIYQQQqxCgSMhhBBCCLEKBY6EEEIIIcQqFDgSQgghhBCrUOBICCGEEEKsYtMbiQ6YOhRukQMhCXCDQNgzsalQKAQnFEBT3Ygr+85D8WNej6RLCCGEEEKs0+OBo9+sKLhH+8HF2wWOHo4Q2gh7JF1OyEFow0Ho2xfuIf2gUalx8/TlHkmbEEIIIYR0rsebqu393ACBARAYIBAYAIG+R/7T6/X/TRMwGAwImDO8pzedkB4TEhKC+fPnIyAg4G5vyh+aRCLB7NmzMXr0aHAc9bwhxFojR47E3Llz4enpebc3hfzO9HiNo65FB51OD41GB7VaB06n77G09RDCoAc0LVoYhIIeS/f3IiUlBdOnTwcAKJVKbNiwAQqF4i5v1b3rbuXXtGnTsGTJEohEIsyaNQs7d+5Eenp6r//un41UKkVqaiq8vb1hMBhw4sQJvPHGG7/Jb6empiI6OhoAUFJSgieeeOI3+d3eQOXKn8+yZcsQHx8PjuMQHx+PzZs34/z5891OTyqVYt26dSwI3bdvH3bt2tVTm0vuMT0eOBr0BsBggMGgh0Gvg0Hfc7UAOo0AWmih02ihVWu7vH7bk1uv1+Pbb7/Fp59+avU6f8QLwvTGYYlarcbNmzdx7NgxfP/99621v6RdEREREIlEAACRSISgoCAKHHuBTCaDm5sbAEAgEMDPzw9OTk5oaGi4y1tGOhIZGYkZM2YgMDAQjo6OEAgE0Ol0KC8vx9GjR5GWlobm5mYAwKZNmxASEgIAqKqqwsaNG1FcXNxh+suWLUNCQgIEAgEaGxuxdetWnDp1ireMvb09pk2bhjFjxsDb2xsODg4QCATQ6/VobGzElStXkJ6ejoyMjN7JhLssPDyc1dA7OTkhKCjojgJH8ufSK4NjepPBYIBeD+h7oCaT4zhMnjwZ58+fp4umAyKRCH5+fkhOTkZERAT+8Y9/oLa29m5v1j3r4sWLiIyMhI2NDdRqNa5du8b7ftKkSRg1ahQGDhyI6upqPPfcc3dpS3/fLl68iLq6Ori5ucFgMKCsrIyCxnsYx3FYsWIFHnroIQiF/L7vQqEQ/fv3x+LFizFu3Di8+eabKC4uRm5uLgYPHgyhUAiJRAKZTNZh4MhxHIYOHQqBoLVFSqlUmpXt48ePx5IlS9C3b1+L6zs7OyM8PBxDhw7F1KlTsXXrVly/fr0HcuDeUVhYCD8/PxZcUw0z6YrfXeDY0yQSCebMmYO8vDyqSQOg1WpRWloKrba1RlcikcDd3R0cx0EgECA8PBzz5s3Djh077vKW3ru+++47VFZWIjg4GOfPn8fZs2d5348aNYo1czY2Nt6NTfxDKC4uxoYNGzB+/HjcunULP/30093eJNKBpKQkPPzww6ymS6/Xo7m5GQaDAba2trCzswPQ2srz3HPPYePGjTh79ixiY2Ph6uoKGxsbyGQyfPfdd+3+RmRkJLy9vQG0VjLI5XKoVCr2/axZszB//nzWImCkVquh1WphY2PDvuM4DiEhIXj55Zfx2muvdVrT+Xvy3nvvoaSkBN7e3jhz5gzy8/Pv9iaR35HeCRwN//0Prc3Wd2KscxQedrk [truncated] 
