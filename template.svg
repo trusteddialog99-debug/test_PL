@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <!-- Beispielvorlage mit zwei Platzhaltern -->
+  <style>
+    .ph { fill: none; stroke: #888888; stroke-dasharray: 6 4; }
+  </style>
+
+  <!-- Avatar-Platzhalter (1:1) -->
+  <rect id="placeholder-avatar" x="40" y="40" width="200" height="200" class="ph" />
+
+  <!-- Rechteck-Logo-Platzhalter (5.5:1) -->
+  <rect id="placeholder-rect-logo" x="280" y="60" width="550" height="100" class="ph" />
+
+  <!-- Beispielhintergrund / Text um die Vorschau zu sehen -->
+  <rect x="0" y="0" width="900" height="600" fill="transparent" />
+</svg>
