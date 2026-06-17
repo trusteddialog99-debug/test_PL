@@ -1,4 +1,5 @@
 from lxml import etree as ET
+from lxml.etree import XMLSyntaxError
 import re
 
 SVG_NS = "http://www.w3.org/2000/svg"
@@ -13,9 +14,26 @@ def parse_length(value):
 
 
 def load_svg_root(svg_text):
-    parser = ET.XMLParser(remove_blank_text=True)
-    root = ET.fromstring(svg_text.encode("utf-8"), parser=parser)
-    return root
+    # sanitize some illegal control characters that break XML parsing
+    def _sanitize(text):
+        if not isinstance(text, str):
+            text = text.decode("utf-8", errors="ignore")
+        # remove C0 control chars except \t, \n, \r
+        text = re.sub(r"[\x00-\x08\x0B\x0C\x0E-\x1F]", "", text)
+        return text
+
+    svg_text = _sanitize(svg_text)
+
+    # try a strict parser first, then fall back to a recovering parser
+    parser = ET.XMLParser(remove_blank_text=True, recover=False, huge_tree=False)
+    try:
+        root = ET.fromstring(svg_text.encode("utf-8"), parser=parser)
+        return root
+    except XMLSyntaxError:
+        # fallback: allow recovery and large trees (Illustrator files can be big)
+        parser = ET.XMLParser(remove_blank_text=True, recover=True, huge_tree=True)
+        root = ET.fromstring(svg_text.encode("utf-8"), parser=parser)
+        return root
 
 
 def tostring_svg(root):
@@ -49,8 +67,7 @@ def get_rect_box(rect):
 
 
 def get_inner_svg_root(svg_text):
-    root = load_svg_root(svg_text)
-    return root
+    return load_svg_root(svg_text)
 
 
 def insert_svg_into_placeholder(template_root, placeholder_rect, uploaded_svg_text, padding=0):
